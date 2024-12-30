@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .checkout-form {
+      width: 90%;
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .checkout-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f4b400;
+      color: black;
+    }
+
+    .confirmation-message {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <section class="checkout-form">
+    <h2>Enter Your Details</h2>
+    <form id="checkoutForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" placeholder="Your address" required></textarea>
+
+      <label for="pincode">Pin Code:</label>
+      <input type="text" id="pincode" name="pincode" placeholder="Your area pin code" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" placeholder="Your state" required>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" placeholder="Your country" required>
+
+      <button type="button" onclick="submitOrder()">Submit Order</button>
+    </form>
+    <div class="confirmation-message" id="confirmationMessage">
+      🎉 Your order has been confirmed! Thank you for shopping with us. 🎉
+    </div>
+  </section>
+</body>
+<script>
+  function submitOrder() {
+    // Simulate form submission and show confirmation message
+    const form = document.getElementById('checkoutForm');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    
+    if (form.checkValidity()) {
+      form.style.display = 'none';
+      confirmationMessage.style.display = 'block';
+    } else {
+      alert('Please fill in all required fields!');
+    }
+  }
+</script>
+</html>

@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Urban Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Categories</a>
+          <ul class="dropdown-content">
+            <li><a href="#jeans">Jeans</a></li>
+            <li><a href="#suits">Suits</a></li>
+            <li><a href="#tshirts">T-Shirts</a></li>
+            <li><a href="#shirts">Shirts</a></li>
+            <li><a href="#kurta">kurta</a></li>
+          </ul>
+        </li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <form class="search-form">
+        <input type="text" id="search-input" placeholder="Search products..." />
+      
+      </form>
+    </nav>
+  </header>
+  
+  
+  
+
+  <section class="product-list">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Shirts (20 items) -->
+      <div class="product-card">
+        <img src="images/shirt1.jpg" alt="Classic White Shirt">
+        <h3>Classic White Shirt</h3>
+        <p>₹799</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="images/shopshirt2.jpg" alt="Blue Denim Shirt">
+        <h3>Blue Denim Shirt</h3>
+        <p>₹1,199</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      <div class="product-card">
+        <img src="images/shopshirt1.jpg" alt="Classic White Shirt">
+        <h3>Classic White Shirt</h3>
+        <p>₹799</p>
+        <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt300.jpg" alt="Shirts for Men: Buy Latest Men ">
+        <h3>Shirts for Men: Buy Latest Men </h3>
+        <p>₹400</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt4.jpg" alt="Checked Spread-Collar Shirt with Patch Pocket">
+        <h3>Checked Spread-Collar Shirt with Patch Pocket</h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt5.jpg" alt="Buy Linen Shirts for Men ">
+        <h3>Buy Linen Shirts for Men </h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt6.jpg" alt="Roadster Men Black Slim Fit Faded Denim Shirt ">
+        <h3>Roadster Men Black Slim Fit Faded Denim Shirt </h3>
+        <p>₹599</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt7.jpg" alt="Buy Casual Shirts For Men">
+        <h3>Buy Casual Shirts For Men</h3>
+        <p>₹749</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt8.jpg" alt="COOFANDY Men's Casual Shirts Long Sleeve Button ">
+        <h3>COOFANDY Men's Casual Shirts Long Sleeve Button </h3>
+        <p>₹756</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt9.jpg" alt="Men Casual Striped Shirt White / XL">
+        <h3>Men Casual Striped Shirt White / XL</h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt10.jpg" alt="Mens Black/Grey Slim Fit Checked Casual Shirt">
+        <h3>Mens Black/Grey Slim Fit Checked Casual Shirt</h3>
+        <p>₹788</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt11.jpg" alt="Orlando - Yale Blue Casual Shirts for Men | Ariser 38 / Half Sleeve">
+        <h3>Orlando - Yale Blue Casual Shirts for Men | Ariser 38 / Half Sleeve</h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt12.jpg" alt="Elevate Your Style with Designer Shirts">
+        <h3>Elevate Your Style with Designer Shirts</h3>
+        <p>₹1000</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt14.jpg" alt="Buy Men New Arrival Shirts Online">
+        <h3>Buy Men New Arrival Shirts Online</h3>
+        <p>₹999</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt15.jpg" alt="Mens Cotton Shirt - Shop cotton shirts for Gents ">
+        <h3>Mens Cotton Shirt - Shop cotton shirts for Gents </h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt16.jpg" alt="Snitch Men's LINING MAROON SHIRT">
+        <h3>Snitch Men's LINING MAROON SHIRT</h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt17.jpg" alt="Buy Jari Shirts for Men Online |">
+        <h3>Buy Jari Shirts for Men Online |</h3>
+        <p>₹799</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt18.jpg" alt="Shop Formal Shirts for Men ">
+        <h3>Shop Formal Shirts for Men </h3>
+        <p>₹1,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt19.jpg" alt="Men's Shirts - Buy Best Casual Shirt">
+        <h3>Men's Shirts - Buy Best Casual Shirt</h3>
+        <p>₹797</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt20.jpg" alt="Brown Shirt">
+        <h3>Brown Shirt</h3>
+        <p>₹299</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt21.jpg" alt="Men's Solid Dress Shirts & Formal Shirts">
+        <h3>Men's Solid Dress Shirts & Formal Shirts</h3>
+        <p>₹2,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt22.jpg" alt="Buy Men Mustard Check Cotton Blend Shirt">
+        <h3>Buy Men Mustard Check Cotton Blend Shirt</h3>
+        <p>₹599</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopshirt23.jpg" alt="Chambray shirts">
+        <h3>Chambray shirts</h3>
+        <p>₹566</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      <!-- Repeat this block for a total of 20 shirts -->
+
+      <!-- Jeans (20 items) -->
+      <div class="product-card">
+        <img src="images/shopjeans1.jpg" alt="Black Jeans For men">
+        <h3>Black Jeans For men</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      <div class="product-card">
+        <img src="images/shopjeans2.jpg" alt="Roadster Men Black Premium Highly Distressed Skinny Fit Mid-Rise Stretchable Jeans (32)">
+        <h3>Roadster Men Black Premium Highly Distressed Skinny Fit Mid-Rise Stretchable Jeans (32)</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans3.jpg" alt="Buy DENIMLLOK Men's Solid Straight Fit Comfortable and Stretchable Black Jeans, Men ">
+        <h3>Buy DENIMLLOK Men's Solid Straight Fit Comfortable and Stretchable Black Jeans, Men </h3>
+        <p>₹1,000</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans4.jpg" alt="BlackTree Black Jeans Men Distressed Patchwrok ">
+        <h3>BlackTree Black Jeans Men Distressed Patchwrok </h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans5.jpg" alt="qucoqpe Men's Black Skinny Stretch Denim Jeans">
+        <h3>qucoqpe Men's Black Skinny Stretch Denim Jeans</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans6.jpg" alt="Mens Skinny Jeans Classic Fashion Designer Elastic Straight Black Jeans ">
+        <h3>Mens Skinny Jeans Classic Fashion Designer Elastic Straight Black Jeans </h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans7.jpg" alt="Revoir Biker Jeans">
+        <h3>Revoir Biker Jeans</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans8.jpg" alt="Men's Biker In Slim Fit Jeans">
+        <h3>Men's Biker In Slim Fit Jeans</h3>
+        <p>₹400</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans21.jpg" alt="Plain Rider Jeans">
+        <h3>Plain Rider Jeans</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shopjeans22.jpg" alt="Blue Jeans">
+        <h3>Blue Jeans</h3>
+        <p>₹1,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      <div class="product-card">
+        <img src="images/suit1.jpg" alt="Premium suit">
+        <h3>Black suit</h3>
+        <p>₹5,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit2.jpg" alt="Maroon 3-piece elegant formal fashion Men suits">
+        <h3>Maroon 3-piece elegant formal fashion Men suits</h3>
+        <p>₹9,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit3.jpg" alt="Dinner Grey Slim Fit Suits For Men">
+        <h3>Dinner Grey Slim Fit Suits For Men</h3>
+        <p>₹6,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit4.jpg" alt="Black suit">
+        <h3>Black suit</h3>
+        <p>₹6,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit5.jpg" alt="Black Wedding Embroidered Imported Fabric Mens Suit">
+        <h3>Black Wedding Embroidered Imported Fabric Mens Suit</h3>
+        <p>₹12,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit6.jpg" alt="Mens Wear">
+        <h3>Mens Wear</h3>
+        <p>₹16,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit7.jpg" alt="Men's Checked Suits | Check Suits">
+        <h3>Men's Checked Suits | Check Suits</h3>
+        <p>₹14,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit8.jpg" alt="Lavender checks elegant formal fashion Men suits">
+        <h3>Black suit</h3>
+        <p>₹11,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit9.jpg" alt="Darbar In SLIM FIT Solid Men Suit ">
+        <h3>Darbar In SLIM FIT Solid Men Suit </h3>
+        <p>₹18,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit10.jpg" alt="Stretchable suits for men">
+        <h3>Stretchable suits for men</h3>
+        <p>₹12,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit11.jpg" alt="Tweed Suits">
+        <h3>Tweed Suits</h3>
+        <p>₹15,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit12.jpg" alt="Plaid Suits">
+        <h3>Plaid Suit</h3>
+        <p>₹17,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit13.jpg" alt="Wedding Suits">
+        <h3>Wedding suit</h3>
+        <p>₹13,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit14.jpg" alt="Cotton Suits">
+        <h3>Cotton Suits</h3>
+        <p>₹11,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit15.jpg" alt="Stylish Light Grey Three-Piece Suit for Men">
+        <h3>Stylish Light Grey Three-Piece Suit for Men</h3>
+        <p>₹17,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/suit16.jpg" alt="2 piece Men Suits, Cotton Blend">
+        <h3>2 piece Men Suits, Cotton Blend</h3>
+        <p>₹10,499</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+      </div>
+      <!-- Repeat this block for a total of 20 jeans -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Urban Clothing </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+<section id="jeans" class="product-list">
+  <h2>Jeans</h2>
+  <div class="product-grid">
+    <!-- Jeans Product Cards -->
+    <div class="product-card">
+      <img src="images/jeans1.jpg" alt="Slim Fit Jeans">
+      <h3>Slim Fit Jeans</h3>
+      <p>₹1,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans2.jpg" alt="Roadster Men Black Premium Highly Distressed Skinny Fit Mid-Rise Stretchable Jeans (32)">
+      <h3>Roadster Men Black Premium Highly Distressed Skinny Fit Mid-Rise Stretchable Jeans (32)</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans3.jpg" alt="Buy DENIMLLOK Men's Solid Straight Fit Comfortable and Stretchable Black Jeans, Men ">
+      <h3>Buy DENIMLLOK Men's Solid Straight Fit Comfortable and Stretchable Black Jeans, Men </h3>
+      <p>₹1,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans4.jpg" alt="BlackTree Black Jeans Men Distressed Patchwrok ">
+      <h3>BlackTree Black Jeans Men Distressed Patchwrok </h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans5.jpg" alt="qucoqpe Men's Black Skinny Stretch Denim Jeans">
+      <h3>qucoqpe Men's Black Skinny Stretch Denim Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images/shopjeans6.jpg" alt="Mens Skinny Jeans Classic Fashion Designer Elastic Straight Black Jeans ">
+      <h3>Mens Skinny Jeans Classic Fashion Designer Elastic Straight Black Jeans </h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans7.jpg" alt="Revoir Biker Jeans">
+      <h3>Revoir Biker Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans8.jpg" alt="Men's Biker In Slim Fit Jeans">
+      <h3>Men's Biker In Slim Fit Jeans</h3>
+      <p>₹400</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans21.jpg" alt="Plain Rider Jeans">
+      <h3>Plain Rider Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans22.jpg" alt="Blue Jeans">
+      <h3>Blue Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans23.jpg" alt="Urbano Fashion Slim Men Blue Jeans">
+      <h3>Urbano Fashion Slim Men Blue Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans24.jpg" alt="Men Ice Blue Slim Fit Mid Rise Clean Look Stretchable Jeans">
+      <h3>Men Ice Blue Slim Fit Mid Rise Clean Look Stretchable Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans25.jpg" alt="Buy U.S. Polo Assn. Denim Co. Brandon Slim ">
+      <h3>Buy U.S. Polo Assn. Denim Co. Brandon Slim </h3>
+      <p>₹1,432</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans26.jpg" alt="Skinny Fit Dark Blue Jeans">
+      <h3>Skinny Fit Dark Blue Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans27.jpg" alt="Baby Neutral Blue Rib Waist Skinny Denim Jeans – Gerber Childrenswear">
+      <h3>Baby Neutral Blue Rib Waist Skinny Denim Jeans – Gerber Childrenswear</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans28.jpg" alt="PODGE Men Slim Fit Denim Mid Rise Dark Blue Jeans">
+      <h3>PODGE Men Slim Fit Denim Mid Rise Dark Blue Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans29.jpg" alt="Riotous Brown Baggy Fit Jeans">
+      <h3>Riotous Brown Baggy Fit Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images/shopjeans30.jpg" alt="Urbano Fashion Men's Slim Fit Denim Jeans Stretchable">
+      <h3>Urbano Fashion Men's Slim Fit Denim Jeans Stretchable</h3>
+      <p>₹500</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans31.jpg" alt="Men Brown Dark Slim Fit Jeans">
+      <h3>Men Brown Dark Slim Fit Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans32.jpg" alt="Men Denim Jeans - Dark Chocolate Brown">
+      <h3>Men Denim Jeans - Dark Chocolate Brown</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="images/shopjeans33.jpg" alt="Men Lightly Washed Slim Fit Jeans">
+      <h3>Men Lightly Washed Slim Fit Jeans</h3>
+      <p>₹2,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans34.jpg" alt="Roadster Men Grey Skinny Fit Light Fade Stretchable ">
+      <h3>Roadster Men Grey Skinny Fit Light Fade Stretchable </h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans35.jpg" alt="Grey Denim Ankle Length Stretchable Men's Jeans - Tistabene ">
+      <h3>Grey Denim Ankle Length Stretchable Men's Jeans - Tistabene </h3>
+      <p>₹2,632</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans36.jpg" alt="Men Denim Jeans - Dark Grey">
+      <h3>Men Denim Jeans - Dark Grey</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans37.jpg" alt="HIGHLANDER Men White Jeans - Buy HIGHLANDER ">
+      <h3>HIGHLANDER Men White Jeans - Buy HIGHLANDER </h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans38.jpg" alt="Premium White Jeans">
+      <h3>Premium White Jeans</h3>
+      <p>₹1,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopjeans39.jpg" alt="White Knee Cut Mens Jeans">
+      <h3>White Knee Cut Mens Jeans</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopjeans40.jpg" alt="Buy FREAKINS Men White Wide Leg High-Rise Highly Distressed Pure Cotton Jeans - Jeans for Men">
+      <h3>Buy FREAKINS Men White Wide Leg High-Rise Highly Distressed Pure Cotton Jeans - Jeans for Men</h3>
+      <p>₹1,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <!-- Add more jeans products here -->
+  </div>
+</section>
+
+<section id="suits" class="product-list">
+  <h2>Suits</h2>
+  <div class="product-grid">
+    <!-- Suits Product Cards -->
+    <div class="product-card">
+      <img src="images/suit1.jpg" alt="Black Suit">
+      <h3>Black Suit</h3>
+      <p>₹5,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit2.jpg" alt="Maroon 3-piece elegant formal fashion Men suits">
+      <h3>Maroon 3-piece elegant formal fashion Men suits</h3>
+      <p>₹9,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit3.jpg" alt="Dinner Grey Slim Fit Suits For Men">
+      <h3>Dinner Grey Slim Fit Suits For Men</h3>
+      <p>₹6,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit4.jpg" alt="Black suit">
+      <h3>Black suit</h3>
+      <p>₹6,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit5.jpg" alt="Black Wedding Embroidered Imported Fabric Mens Suit">
+      <h3>Black Wedding Embroidered Imported Fabric Mens Suit</h3>
+      <p>₹12,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit6.jpg" alt="Mens Wear">
+      <h3>Mens Wear</h3>
+      <p>₹16,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit7.jpg" alt="Men's Checked Suits | Check Suits">
+      <h3>Men's Checked Suits | Check Suits</h3>
+      <p>₹14,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit8.jpg" alt="Lavender checks elegant formal fashion Men suits">
+      <h3>Black suit</h3>
+      <p>₹11,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit9.jpg" alt="Darbar In SLIM FIT Solid Men Suit ">
+      <h3>Darbar In SLIM FIT Solid Men Suit </h3>
+      <p>₹18,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit10.jpg" alt="Stretchable suits for men">
+      <h3>Stretchable suits for men</h3>
+      <p>₹12,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit11.jpg" alt="Tweed Suits">
+      <h3>Tweed Suits</h3>
+      <p>₹15,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit12.jpg" alt="Plaid Suits">
+      <h3>Plaid Suit</h3>
+      <p>₹17,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit13.jpg" alt="Wedding Suits">
+      <h3>Wedding suit</h3>
+      <p>₹13,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit14.jpg" alt="Cotton Suits">
+      <h3>Cotton Suits</h3>
+      <p>₹11,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit15.jpg" alt="Stylish Light Grey Three-Piece Suit for Men">
+      <h3>Stylish Light Grey Three-Piece Suit for Men</h3>
+      <p>₹17,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/suit16.jpg" alt="2 piece Men Suits, Cotton Blend">
+      <h3>2 piece Men Suits, Cotton Blend</h3>
+      <p>₹10,499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <!-- Add more suits products here -->
+  </div>
+</section>
+
+<section id="tshirts" class="product-list">
+  <h2>T-Shirts</h2>
+  <div class="product-grid">
+    <!-- T-Shirts Product Cards -->
+    <div class="product-card">
+      <img src="images/tshirt1.jpg" alt="Graphic T-Shirt">
+      <h3>Graphic T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt2.jpg" alt="Black Graphic Print Oversized T-shirt|900749701-Jet-Black">
+      <h3>Black Graphic Print Oversized T-shirt|900749701-Jet-Black</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt3.jpg" alt="Buy Turquoise & Multi Print Jersey Graphic T-shirt ">
+      <h3>Buy Turquoise & Multi Print Jersey Graphic T-shirt </h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt4.jpg" alt="Produkt By Jack & Jones Graphic Print Round-Neck T-shirt For Men ">
+      <h3>Produkt By Jack & Jones Graphic Print Round-Neck T-shirt For Men </h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt5.jpg" alt="URB_N Men Regular Fit Graphic Print T-shirt">
+      <h3>URB_N Men Regular Fit Graphic Print T-shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt6.jpg" alt="Calvin Klein Back Serenity Graphic T-Shirt, Brown">
+      <h3>Calvin Klein Back Serenity Graphic T-Shirt, Brown</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt7.jpg" alt="Mistake White Oversize Graphic T-Shirt">
+      <h3>Mistake White Oversize Graphic T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt8.jpg" alt="AUSK Striped Crew-Neck T-shirt For Men (Navy, M)">
+      <h3>AUSK Striped Crew-Neck T-shirt For Men (Navy, M)</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt9.jpg" alt="URB_N Men Oversized Striped T-shirt">
+      <h3>URB_N Men Oversized Striped T-shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/tshirt10.jpg" alt="EYEBOGLER Polo Tshirts for Men | T Shirt For Men">
+      <h3>EYEBOGLER Polo Tshirts for Men | T Shirt For Men</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/tshirt11.jpg" alt="Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt">
+      <h3>Urbano Fashion Men's Printed Full Sleeve Slim Fit Cotton T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt12.jpg" alt="NOBERO Graphic Printed Oversized T-shirt">
+      <h3>NOBERO Graphic Printed Oversized T-shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt13.jpg" alt="ATIXEL Mens Fashion T-Shirt with 3D Printing Pattern, Short Sleeves for Summer">
+      <h3>ATIXEL Mens Fashion T-Shirt with 3D Printing Pattern, Short Sleeves for Summer</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt14.jpg" alt="Rare Rabbit Men's Mano White Cotton Fabric Half Sleeves Solid T-Shirt">
+      <h3>Rare Rabbit Men's Mano White Cotton Fabric Half Sleeves Solid T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt15.jpg" alt="The Shopping Field Solid Men Round Neck Black T-Shirt">
+      <h3>The Shopping Field Solid Men Round Neck Black T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tshirt16.jpg" alt="White Logo Printed Drop Shoulder T-Shirt">
+      <h3>White Logo Printed Drop Shoulder T-Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+    <!-- Add more T-Shirts products here -->
+  </div>
+</section>
+
+<section id="shirts" class="product-list">
+  <h2>Shirts</h2>
+  <div class="product-grid">
+    <!-- Shirts Product Cards -->
+    <div class="product-card">
+      <img src="images/shirt1.jpg" alt="Classic White Shirt">
+      <h3>Classic White Shirt</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopshirt23.jpg" alt="Chambray shirts">
+      <h3>Chambray shirts</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt2.jpg" alt="Blue Denim Shirt">
+      <h3>Blue Denim Shirt</h3>
+      <p>₹1,199</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt1.jpg" alt="Classic White Shirt">
+      <h3>Classic White Shirt</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopshirt300.jpg" alt="Shirts for Men: Buy Latest Men ">
+      <h3>Shirts for Men: Buy Latest Men </h3>
+      <p>₹400</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopshirt4.jpg" alt="Checked Spread-Collar Shirt with Patch Pocket">
+      <h3>Checked Spread-Collar Shirt with Patch Pocket</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopshirt5.jpg" alt="Buy Linen Shirts for Men ">
+      <h3>Buy Linen Shirts for Men </h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/shopshirt6.jpg" alt="Roadster Men Black Slim Fit Faded Denim Shirt ">
+      <h3>Roadster Men Black Slim Fit Faded Denim Shirt </h3>
+      <p>₹599</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt7.jpg" alt="Buy Casual Shirts For Men">
+      <h3>Buy Casual Shirts For Men</h3>
+      <p>₹749</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt8.jpg" alt="COOFANDY Men's Casual Shirts Long Sleeve Button ">
+      <h3>COOFANDY Men's Casual Shirts Long Sleeve Button </h3>
+      <p>₹756</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt9.jpg" alt="Men Casual Striped Shirt White / XL">
+      <h3>Men Casual Striped Shirt White / XL</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt10.jpg" alt="Mens Black/Grey Slim Fit Checked Casual Shirt">
+      <h3>Mens Black/Grey Slim Fit Checked Casual Shirt</h3>
+      <p>₹788</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt11.jpg" alt="Orlando - Yale Blue Casual Shirts for Men | Ariser 38 / Half Sleeve">
+      <h3>Orlando - Yale Blue Casual Shirts for Men | Ariser 38 / Half Sleeve</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt12.jpg" alt="Elevate Your Style with Designer Shirts">
+      <h3>Elevate Your Style with Designer Shirts</h3>
+      <p>₹1000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt14.jpg" alt="Buy Men New Arrival Shirts Online">
+      <h3>Buy Men New Arrival Shirts Online</h3>
+      <p>₹999</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt15.jpg" alt="Mens Cotton Shirt - Shop cotton shirts for Gents ">
+      <h3>Mens Cotton Shirt - Shop cotton shirts for Gents </h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt16.jpg" alt="Snitch Men's LINING MAROON SHIRT">
+      <h3>Snitch Men's LINING MAROON SHIRT</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt17.jpg" alt="Buy Jari Shirts for Men Online |">
+      <h3>Buy Jari Shirts for Men Online |</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt18.jpg" alt="Shop Formal Shirts for Men ">
+      <h3>Shop Formal Shirts for Men </h3>
+      <p>₹1,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt19.jpg" alt="Men's Shirts - Buy Best Casual Shirt">
+      <h3>Men's Shirts - Buy Best Casual Shirt</h3>
+      <p>₹797</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt20.jpg" alt="Brown Shirt">
+      <h3>Brown Shirt</h3>
+      <p>₹299</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt21.jpg" alt="Men's Solid Dress Shirts & Formal Shirts">
+      <h3>Men's Solid Dress Shirts & Formal Shirts</h3>
+      <p>₹2,000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt22.jpg" alt="Buy Men Mustard Check Cotton Blend Shirt">
+      <h3>Buy Men Mustard Check Cotton Blend Shirt</h3>
+      <p>₹599</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shopshirt23.jpg" alt="Chambray shirts">
+      <h3>Chambray shirts</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <!-- Add more shirts products here -->
+  </div>
+</section>
+
+
+<section id="kurta" class="product-list">
+  <h2>Kurta</h2>
+  <div class="product-grid">
+    <!-- Shirts Product Cards -->
+    <div class="product-card">
+      <img src="images/kurta1.jpg" alt="Haldi Kurta">
+      <h3>Haldi Kurta</h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist">Add to Wishlist</button>
+    </div>
+    <div class="product-card">
+      <img src="images/kurta2.jpg" alt="Haldi Kurta For Men">
+      <h3>Haldi Kurta For Men</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta3.jpg" alt="Kurta for haldi clearance ceremony">
+      <h3>Kurta for haldi clearance ceremony</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta4.jpg" alt="SUMMER HALDI YELLOW CHIKANKARI LUCKNOWI LAKHNAVI KURTA PAISLEY Design">
+      <h3>SUMMER HALDI YELLOW CHIKANKARI LUCKNOWI LAKHNAVI KURTA PAISLEY Design</h3>
+      <p>₹899 </p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta5.jpg" alt="Haldi Kurta For Men">
+      <h3>Premium Kurta </h3>
+      <p>₹5000</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta6.jpg" alt="Ntific blue Men Chikan Embroidery Straight Kurta">
+      <h3>Ntific blue Men Chikan Embroidery Straight Kurta</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta7.jpg" alt="Orange Silk Kurta Pajama With Jacket - Indian Cloth Store">
+      <h3>Orange Silk Kurta Pajama With Jacket - Indian Cloth Store</h3>
+      <p>₹700</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta8.jpg" alt="THE KURTA COMPANY Mens Orange Printed Cotton Blend Regular Fit Kurta">
+      <h3>THE KURTA COMPANY Mens Orange Printed Cotton Blend Regular Fit Kurta</h3>
+      <p>₹565</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta9.jpg" alt="Embroidery Work Mens Blue Kurta With Pajama Set">
+      <h3>Embroidery Work Mens Blue Kurta With Pajama Sets</h3>
+      <p>₹999</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta10.jpg" alt="BLUE MIRROR EMBROIDERY KURTA ONLY">
+      <h3>BLUE MIRROR EMBROIDERY KURTA ONLY</h3>
+      <p>₹299</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta11.jpg" alt="Sky Blue - Nawab Cotton Men Chikankari Long Kurta 50 ">
+      <h3>Sky Blue - Nawab Cotton Men Chikankari Long Kurta 50 </h3>
+      <p>₹799</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta12.jpg" alt="Sky Blue Color Georgette Festive Wear Stylish">
+      <h3>Sky Blue Color Georgette Festive Wear Stylish</h3>
+      <p>₹600</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta13.jpg" alt="Jaypore Men Black Mandarin Collar Straight Regular Kurta Sets">
+      <h3>Jaypore Men Black Mandarin Collar Straight Regular Kurta Sets</h3>
+      <p>₹1499</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta14.jpg" alt="Men Black Cotton Mandarin Collar Regular Fit Kurta">
+      <h3>Men Black Cotton Mandarin Collar Regular Fit Kurta</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta15.jpg" alt="Men's Black Lakhnavi Kurta with Heavy Embroidery">
+      <h3>Men's Black Lakhnavi Kurta with Heavy Embroidery</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta16.jpg" alt="Men's Black Lakhnavi Kurta with Heavy Embroidery">
+      <h3>Men's Black Lakhnavi Kurta with Heavy Embroidery</h3>
+      <p>₹527</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/kurta17.jpg" alt="Black Leather Embroidered Kurta">
+      <h3>Black Leather Embroidered Kurta</h3>
+      <p>₹566</p>
+      <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      <button class="add-to-wishlist" data-product-id="1">Add to Wishlist</button>
+    </div>
+    <script>
+      function redirectToCheckout() {
+        window.location.href = 'checkout.html';
+      }
+    </script>
+    
