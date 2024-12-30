@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="dropdown">
+          
+          <ul class="dropdown-content">
+            <li><a href="#jeans">Jeans</a></li>
+            <li><a href="#suits">Suits</a></li>
+            <li><a href="#tshirts">T-Shirts</a></li>
+            <li><a href="#shirts">Shirts</a></li>
+          </ul>
+        </li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <form class="search-form">
+        <input type="text" id="search-input" placeholder="Search products..." />
+       
+      </form>
+    </nav>
+  </header>
+  
+  
+  
+
+  <!-- Home Page Banner -->
+  <section class="banner">
+    <img src="images/banner.jpg" alt="Urban Clothing Banner">
+    <div class="banner-text">
+      <h1>Welcome to Urban Clothing</h1>
+      <p>Your favorite place for stylish shirts, t-shirts, and jeans.</p>
+      <a href="shop.html" class="shop-now-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/shirt1.jpg" alt="Classic White Shirt">
+        <h3>Classic White Shirt</h3>
+        <p>₹799</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/tshirt1.jpg" alt="Shirts for Men JACK&JONES">
+        <h3>Shirts for Men JACK&JONES</h3>
+        <p>₹499</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/shirt3.jpg" alt="Black Shirt">
+        <h3>Black Shirt With Good Fit</h3>
+        <p>₹1,334</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/shirt4.jpg" alt="Blue Shirt">
+        <h3>Blue Shirt</h3>
+        <p>₹1,556</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt5.jpg" alt="Premium ">
+        <h3>Premium Fit Shirt</h3>
+        <p>₹1,789</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt6.jpg" alt="Cotton Check Shirts ">
+        <h3>Cotton Check Shirts </h3>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt7.jpg" alt="Gant Marine Fashion Checked Regular Fit Shirt">
+        <h3>Gant Marine Fashion Checked Regular Fit Shirt</h3>
+        <p>₹1,245</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt8.jpg" alt="Buy Men Brown Check Collar Full Sleeve">
+        <h3>Buy Men Brown Check Collar Full Sleeve</h3>
+        <p>₹1,234</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt9.jpg" alt="Grey Checks Slim Fit Shirt">
+        <h3>Grey Checks Slim Fit Shirt</h3>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/shirt10.jpg" alt="Half Sleeves Geometric Printed Shirts">
+        <h3>Half Sleeves Geometric Printed Shirts</h3>
+        <p>₹1,000</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/jeans1.jpg" alt="Slim Fit Jeans">
+        <h3>Slim Fit Jeans</h3>
+        <p>₹1,000</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/jeans2.jpg" alt="The Indian Garage Co. Slim Men Blue Jeans">
+        <h3>The Indian Garage Co. Slim Men Blue Jeans</h3>
+        <p>₹1,000</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/jeans3.jpg" alt="Wrangler Men's Straight Jeans">
+        <h3>Wrangler Men's Straight Jeans</h3>
+        <p>₹1,200</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/jeans4.jpg" alt="Baggy jeans for men ">
+        <h3>Baggy jeans for men </h3>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/jeans5.jpg" alt="Indian Terrain Men Brooklyn Slim Fit Dark Shade Jeans ">
+        <h3>Indian Terrain Men Brooklyn Slim Fit Dark Shade Jeans </h3>
+        <p>₹1,222</p>
+        <button class="add-to-cart" onclick="redirectToCheckout()">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Urban Clothing | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
